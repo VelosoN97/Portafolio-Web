@@ -403,14 +403,7 @@ body::-webkit-scrollbar-track {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out 0s;
-    width: 90%;
-    max-width: 500px;
-}
-
-@media screen and (max-width: 768px) { /* Ajusta el breakpoint según sea necesario */
-    .project__card .project__info {
-        width: 95%; /* Ajusta aún más el ancho para dispositivos móviles */
-    }
+    
 }
 
 .project__card .project__info p {
@@ -421,29 +414,6 @@ body::-webkit-scrollbar-track {
 .project__card .fa-arrow-right-long {
     margin-top: 1rem;
     cursor: pointer;
-}
-
-.project__card .project__info .project-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-}
-
-.project__card .project__info .project-buttons a {
-    background-color: var(--secondary-bg-color);
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-    white-space: nowrap;
-}
-
-.project__card .project__info .project-buttons a:hover {
-    background-color: #ff6600;
 }
 
 .project-buttons a {
