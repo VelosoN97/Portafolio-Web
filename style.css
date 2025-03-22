@@ -403,12 +403,43 @@ body::-webkit-scrollbar-track {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out 0s;
+    padding: 0.5rem;
     
 }
 
 .project__card .project__info p {
-    font-size: larger;
-    margin-top: 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .project__card .project__info p {
+        font-size: 0.9rem; /* Reduce el tamaño de fuente para móviles */
+        margin-top: 0.8rem; /* Ajusta el margen superior */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project__card .project__info p {
+        font-size: 0.8rem; /* Reduce aún más el tamaño de fuente */
+        margin-top: 0.5rem; /* Ajusta el margen superior */
+    }
+}
+
+.project__card .project__info h2 {
+    font-size: 1.5rem; /* Tamaño de fuente base para escritorio */
+}
+
+@media screen and (max-width: 768px) {
+    .project__card .project__info h2 {
+        font-size: 1.2rem; /* Reduce el tamaño de fuente para móviles */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project__card .project__info h2 {
+        font-size: 1rem; /* Reduce aún más el tamaño de fuente */
+    }
 }
 
 .project__card .fa-arrow-right-long {
